@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <!-- <h1>Area of triangle for right angle triangle </h1>
+    <h2 id="res"></h2>
+
+    <script>
+        let base = prompt("Enter the value of base ","25");
+        let height = prompt("Enter the value of height ");
+        let area = (base * height)/2;
+        document.getElementById("res").innerText = `Area of triangle is ${area}`; 
+    </script> -->
+
+    <h1>Area of triangle using heron's formula </h1>
+    <P>General formula is : S=(a+b+c)/2 </P>
+    <P>formula is :temp = S*(S-a)*(S-b)*(S-c)</P>
+    <P>Area is : Math.sqrt(temp)</P>
+    <h3 id="area"></h3>
+
+    <script>
+        let a = parseInt(prompt("Enter the first side of the triangle"));
+        let b = parseInt(prompt("Enter the second side of the triangle "));
+        let c = parseInt(prompt("Enter the third side of the triangle "));
+        let S = (a+b+c)/2;
+        alert(S);
+        let temp = S*(S-a)*(S-b)*(S-c);
+        let area = Math.sqrt(temp);
+        document.getElementById("area").innerHTML = "<i>Area of triangle is : "+area+"</i>";
+    </script>
+
+</body>
+</html>

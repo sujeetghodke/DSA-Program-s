@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>convet Celsius to fahrenheit </h1>
+    <input type="number" id="data">
+    <button onclick="convert()">convert</button>
+    <div id="res"></div>
+    <script>
+        function convert(){
+            let c = document.getElementById("data").value;
+            let f = (c * 1.8) + 32;
+            document.getElementById("res").innerHTML  = `<h2> ${c} celsius is equal to ${f} fahrenheit </h2>`;
+        }
+    </script>
+</body>
+</html>
