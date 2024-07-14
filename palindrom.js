@@ -13,29 +13,27 @@
 // }
 // console.log(`${string} : ${msg}`);
 
-// let string = "maodam";
-// let arrstr = string.split('');
-// // console.log(arrstr);
-// let arrev = arrstr.reverse();
-// // console.log(arrev);
-// let revstr = arrev.join('');
-// // console.log(revstr);
+let string = "maodam";
+let arrstr = string.split("");
+// console.log(arrstr);
+let arrev = arrstr.reverse();
+// console.log(arrev);
+let revstr = arrev.join("");
+// console.log(revstr);
 
-// if(string == revstr){
-//     console.log("The given string is palindrom ");
-// }else{
-//     console.log("The given string is not palindrom ");
-// }
-
-
-
-let str = "nitin";
-let len = str.length;
-let msg = "This is palindrom";
-for(let i = 0 ; i<len/2; i++){
-    if(str[i] != str[len - 1 - i]){
-        msg = "This is not palindrom";
-    }
+if (string == revstr) {
+  console.log("The given string is palindrom ");
+} else {
+  console.log("The given string is not palindrom ");
 }
 
-console.log(msg);
+// let str = "nitin";
+// let len = str.length;
+// let msg = "This is palindrom";
+// for(let i = 0 ; i<len/2; i++){
+//     if(str[i] != str[len - 1 - i]){
+//         msg = "This is not palindrom";
+//     }
+// }
+
+// console.log(msg);
