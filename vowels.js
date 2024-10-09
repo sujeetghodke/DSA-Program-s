@@ -26,22 +26,31 @@
 
 // console.log(`"${string}" string  contains ${result} vowels`);
 
+// const vowels = ['a','e','i','o','u'];
 
+// function countvowels(str){
+//     var count = 0;
+//     for(let letter of str)
+//     {
+//         if(vowels.includes(letter)){
+//             count++;
+//         }
+//     }
+//     return count
+// }
 
-const vowels = ['a','e','i','o','u'];
+const vowels = ["a", "e", "i", "o", "u"];
 
-function countvowels(str){
-    var count = 0;
-    for(let letter of str)
-    {
-        if(vowels.includes(letter)){
-            count++;
-        }
+function countVowels(str) {
+  let count = 0;
+  for (let letter of str) {
+    if (vowels.includes(letter)) {
+      count++;
     }
-    return count
+  }
+  return count;
 }
 
 let string = "My name is Sujeet Ghodke";
-let result = countvowels(string);
-
-console.log("The vowels in the given string are : ",result);
+let result = countVowels(string);
+console.log("The vowels in the given string are : ", result);

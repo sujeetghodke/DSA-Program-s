@@ -13,15 +13,14 @@
 //     res = num * n;
 //     console.log(num+" X "+n+" = "+res);
 //     n++;
-//     table(n) 
+//     table(n)
 // }
 // table(1)
 
-
-function table(num){
-    for(let i=1; i<11; i++){
-        let res = num * i;
-        console.log(`${num} X ${i} = ${res}`);
-    }
+function table(num) {
+  for (let i = 1; i <= 10; i++) {
+    let res = num * i;
+    console.log(res);
+  }
 }
-table(9)
+table(9);
